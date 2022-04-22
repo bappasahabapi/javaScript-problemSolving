@@ -37,7 +37,34 @@ You can download the PDF and Epub version of this repository from the latest run
 </div>
 
 ---
-### 1.Write the basic of loop(while loop & for loop):
+1. ### What are the possible ways to create objects in JavaScript
+
+   There are many ways to create objects in javascript as below
+
+   1. **Object constructor:**
+
+      The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
+
+      ```javascript
+      var object = new Object();
+      ```
+
+      ```javascript
+      var student1 = {
+        id: 10,
+        name: "bappa",
+        age: 24,
+        class: "seven",
+      };
+      ```
+
+### 1.Apply javaScript Concepts
+
+        >> Variables
+        >> Conditions
+        >> Array
+        >> Function
+        >> Loop
 
 ### 2. While Loop| & for loop:
 
@@ -55,13 +82,18 @@ You can download the PDF and Epub version of this repository from the latest run
 ### 4. Simple calculation using function:
 
         1.Addition|Slubtraction|Multiplication|Division numbers.
+        2. Unit Convert Inch to feet , miles to kilometers
+        3.Cheeck odd or even number using a function
+        4.Calculate Factorial number using for loop
+        5.Calculate Factorial number using function
+        5.Calculate Factorial in recursive function
 
-### 5. Declear Objects and its property:\
+### 5. Declear Objects and its property:
 
         1. Declear & Access  a object .
         2. Different ways to set a object property of an object.
 
-
+### 6.
 
 
 ### Table of Contents
