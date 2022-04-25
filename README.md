@@ -55,10 +55,10 @@ for (var i = 1; i <= 5; i++) {
 console.log(factorial);
 ```
 
-### 1. Calculate Factorial number multiple time using function:
+### 2. Calculate Factorial number multiple time using function:
 
 ```
-       The factorial of 7 is: 5040
+   Output is :    The factorial of 7 is: 5040
 ```
 
 ```javascript
