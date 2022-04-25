@@ -34,7 +34,7 @@
         1.Calculate Factorial number using for loop
         2.Calculate Factorial number using function
         3. Calculate Factorial using decremental loop
-        3.Calculate Factorial in recursive function
+        4.Calculate Factorial in recursive function
 
 ## 6. Declear Objects and its property:
 
@@ -99,6 +99,24 @@ function getFactorial(number) {
 
 let givenNumber = getFactorial(6);
 console.log("The factorial of 6 is:", givenNumber);
+```
+
+### 4. .Calculate Factorial using recursive function :
+
+```
+   Output is : Factorial is:  120
+```
+
+```javascript
+function factorial(n) {
+  if (n == 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+const myFactorial = factorial(5);
+console.log("Factorial is: ", myFactorial);
 ```
 
 </a>
