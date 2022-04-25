@@ -41,6 +41,8 @@
         2. Different ways to set a object property of an object.
 
 ---
+---
+---
 
 <a name="fact1">
 
