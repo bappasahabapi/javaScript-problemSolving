@@ -1,16 +1,18 @@
 # Questions:
 
-1. [Apply javaScript Concepts](#1)
+0.  [Console Log](#0)
 
-2. [While Loop & for loop:](#2)
+1.  [Apply javaScript Concepts](#1)
 
-3. [Write a function](#3)
+2.  [While Loop & for loop:](#2)
 
-4. [Simple calculation using function:](#4)
+3.  [Write a function](#3)
 
-5. [Factorial code](#5)
+4.  [Simple calculation using function:](#4)
 
-6. [Declear Objects and its property](#6)
+5.  [Factorial code](#5)
+
+6.  [Declear Objects and its property](#6)
 
 <a name="1">
 
@@ -72,9 +74,86 @@
 
 ---
 
+<a name="0">
+
+**_ --> All About Console Log <-- _**
+
+#### single line Comment (ctr + /)
+
+#### multiline comment (shift + alt + A)
+
+### 1.How to print anythinig in console log:
+
+_Console log means :_ console এ লিখে দাও যেইভাবে লিখা আছে সেইভাবেই।
+JavaScript is a forgiven language .
+
+```
+console.log('"This is console.log tutorial by coder bappa"')
+console.time('my code took time:');
+console.log("with out using semicolon")
+console.log("using semicolon ");
+console.log(10 + 10)
+console.log(34) //mathematics operation
+console.log(true); //boolen variable
+
+```
+
+### 2. write string in javaScript
+
+```
+console.log("using double quotation")
+console.log('using single quotation')
+console.log('"using double quotation under single quotation"')
+console.log(`backtag <h1> <h1/>`)
+```
+
+### 3. console log Array
+
+```
+console.log([11, 22, 33, 44]);
+```
+
+### 4. console log e Object lock করতে পারি চাইলে
+
+```
+console.log({ bappa: 'coder bappa', age: '25' })
+console.table({ bappa: 'coder bappa', age: '25' })
+console.warn('this is a warning')
+
+console.timeEnd('my code took time:');
+console.assert(500 < 179, 'Age > 179 is not possible ');
+console.error('this is an error')
+```
+
+### 5. console.clear();
+
+```
+console.time('my code took time:');
+console.timeEnd('my code took time:');
+```
+
+</a>
+
 <a name="5">
 
 **_ --> Factorial code <-- _**
+
+```
+/*
+    Basic  of Factorial (!)
+ 1! = 1
+ 2! = 2 X 1  = 2 X 1!
+ 3! = 3 X 2 X 1 = 3 X 2!
+ 4! = 4 X 3 X 2 X 1
+ 5! = 5 X 4 X 3 X 2 X 1
+ 6! = 6 X 5 X 4 X 3 X 2 X 1
+ 7! = 7 X 6 X 5 X 4 X 3 X 2 X 1
+ 7! = 7 X 6!
+ n! = n X 9(n-1)!
+
+
+*/
+```
 
 ### 1. Calculate Factorial number using for loop:
 
