@@ -33,6 +33,7 @@
 
         1.Calculate Factorial number using for loop
         2.Calculate Factorial number using function
+        3. Calculate Factorial using decremental loop
         3.Calculate Factorial in recursive function
 
 ## 6. Declear Objects and its property:
@@ -41,7 +42,7 @@
         2. Different ways to set a object property of an object.
 
 ---
----
+
 ---
 
 <a name="fact1">
@@ -79,6 +80,25 @@ function getFactorial(number) {
 
 let givenNumber = getFactorial(7);
 console.log("The factorial of 7 is:", givenNumber);
+```
+
+### 3. .Calculate Factorial using decremental loop:
+
+```
+   Output is :    The factorial of 6 is: 720
+```
+
+```javascript
+function getFactorial(number) {
+  let factorial = 1;
+  for (let i = number; i >= 1; i--) {
+    factorial = factorial * i;
+  }
+  return factorial;
+}
+
+let givenNumber = getFactorial(6);
+console.log("The factorial of 6 is:", givenNumber);
 ```
 
 </a>
