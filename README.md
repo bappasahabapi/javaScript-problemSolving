@@ -40,12 +40,17 @@
         1. Declear & Access  a object .
         2. Different ways to set a object property of an object.
 
+---
+
 <a name="fact1">
- 
- ###  1.  Calculate Factorial number using for loop:
- ```
-        Output is : 120
- ```
+
+**_ --> Factorial code <-- _**
+
+### 1. Calculate Factorial number using for loop:
+
+```
+       Output is : 120
+```
 
 ```javascript
 var factorial = 1;
