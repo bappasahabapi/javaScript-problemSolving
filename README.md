@@ -12,7 +12,9 @@
 
 6. [Declear Objects and its property](#6)
 
-<a name="1">## 1.Apply javaScript Concepts
+<a name="1">
+
+## 1.Apply javaScript Concepts
 
         >> Variables
         >> Conditions
@@ -22,7 +24,8 @@
 
 </a>
 <!-- <a> </a> -->
-<a> 
+<a name="2">
+
 ## 2. While Loop| & for loop:
 
         1.print a number from 0 to 10
@@ -31,15 +34,17 @@
         4. print the odd number from 0-20
 
 </a>
-<a name="3"> 
-##  3. Write a function:
+<a name="3">
+
+## 3. Write a function:
 
         1. wite a function having no parametaer.
         2. A function havig input parameters.
         3. A fucntion havng a return value
 
 </a>
-<a name="4"> 
+<a name="4">
+
 ## 4. Simple calculation using function:
 
         1.Addition|Slubtraction|Multiplication|Division numbers.
@@ -55,8 +60,8 @@
         3. Calculate Factorial using decremental loop
         4.Calculate Factorial in recursive function
 
-<a> 
-## 6. Declear Objects and its property:
+<a name="6"> 
+##  6. Declear Objects and its property:
 
         1. Declear & Access  a object .
         2. Different ways to set a object property of an object.
