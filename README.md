@@ -14,6 +14,10 @@
 
 6.  [Declear Objects and its property](#6)
 
+7.[Mathe and rdandom number code -> mathe.js](#7)
+
+8.[swap variable / swap without temp/ desturting--> swap.js](#8)
+
 <a name="1">
 
 ## 1.Apply javaScript Concepts
@@ -401,3 +405,39 @@ console.log("Factorial is: ", myFactorial);
 ```
 
 </a>
+
+<a name="8">
+
+### Swap variable:
+
+    output is:
+    Before swapping:  5 7
+    After swapping:  7 5
+
+```javascript
+let first = 5;
+let second = 7;
+console.log("Before swapping: ", first, second);
+
+var temp = first;
+first = second;
+second = temp;
+console.log("After swapping: ", first, second);
+</a>
+```
+
+### Using destructing:
+
+    output is:
+    Before swapping:  10 40
+    After swapping:  40 10
+
+```javascript
+var first = 10;
+var second = 40;
+console.log("Before swapping: ", first, second);
+
+// Array Distructing
+[first, second] = [second, first];
+console.log("After swapping: ", first, second);
+```
