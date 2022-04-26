@@ -46,64 +46,64 @@ console.log('"Primitive data types"')
 
 #### String :
 
-```
+```javascript
 let bname = "bappa";
-var sname = ' saha';
-console.log('my string is :' + bname);
-console.log("Data type is :" + (typeof bname));
+var sname = " saha";
+console.log("my string is :" + bname);
+console.log("Data type is :" + typeof bname);
 ```
 
 #### Numbers :
 
-```
+```javascript
 let num = 32;
 console.log("number is : " + num);
-console.log("Data type is :" + (typeof num));
+console.log("Data type is :" + typeof num);
 ```
 
 #### Boolean:
 
-```
+```javascript
 let isPlayer = true;
-console.log( "Bappa is a player " )
-console.log(isPlayer)
-console.log("Data type is :" + (typeof isPlayer));
+console.log("Bappa is a player ");
+console.log(isPlayer);
+console.log("Data type is :" + typeof isPlayer);
 ```
 
 #### Null :
 
-```
+```javascript
 let nullVar = null;
-console.log(nullVar)
-console.log("Data type is :" + (typeof nullVar));
+console.log(nullVar);
+console.log("Data type is :" + typeof nullVar);
 ```
 
 #### Undefined :
 
-```
+```javascript
 let undef = undefined;
 console.log(undef);
-console.log("Data type is :" + (typeof undef));
+console.log("Data type is :" + typeof undef);
 ```
 
 #### Reference data types :
 
-```
+```javascript
 console.log(' "Referance data types" ');
 ```
 
 #### Array :
 
-```
+```javascript
 myarr = [1, 2, 3, 4, 5, false, "string"];
 console.log(myarr);
 console.table(myarr);
-console.log("Data type is :" + (typeof myarr));
+console.log("Data type is :" + typeof myarr);
 ```
 
 #### Object literals :
 
-```
+```javascript
 let marks = {
 bappa: 90,
 doll: 91,
@@ -131,7 +131,7 @@ Variables in JavaScript :
 There are threee types of variables in javascript.
 They all are keywords.
 
-```
+```javascript
 01.var type(global),
 02.const type(local ),
 03.let type.(block level scope)
@@ -140,18 +140,18 @@ They all are keywords.
                 // var used in old javascript
 ```
 
-```
- var nam = `'coder'bappa.`;
- console.log(nam);
+```javascript
+var nam = `'coder'bappa.`;
+console.log(nam);
 
- var youtube;
- youtube = 'gogabappa'
- console.log(youtube);
+var youtube;
+youtube = "gogabappa";
+console.log(youtube);
 
- var marks = 46;
- var mark ='46';
- console.log( "this is value not string  " ,marks);
- console.log(nam,youtube,marks,mark);
+var marks = 46;
+var mark = "46";
+console.log("this is value not string  ", marks);
+console.log(nam, youtube, marks, mark);
 ```
 
 #### Rules:
@@ -169,39 +169,39 @@ They all are keywords.
 
 #### Examples:
 
-```
-var city = 'Dhaka';
+```javascript
+var city = "Dhaka";
 console.log(city);
-// var _city1 = 'Dhaka';  //not used in morder javascript.
-// var $city2 = 'Dhaka';   //not used in morder javascript.
+var _city1 = "Dhaka"; //not used in morder javascript.
+var $city2 = "Dhaka"; //not used in morder javascript.
 
-                // const variable : local
+// const variable : local
 
-                // const variable : where the value is fixed
-             //  Assignment to constant variable is not allowed in const type
-             // when makimg const , we have to initialize it .
+// const variable : where the value is fixed
+//  Assignment to constant variable is not allowed in const type
+// when makimg const , we have to initialize it .
 
-const fName = ' bappa';
-// fName = 'saha';  // Uncaught TypeError: Assignment to constant variable.
+const fName = " bappa";
+fName = "saha"; // Uncaught TypeError: Assignment to constant variable.
 console.log(fName);
 
-                        //let variable: block level scope
+//let variable: block level scope
 
-                        // let used in moder javascipt replacement of var .
+// let used in moder javascipt replacement of var .
 {
-    let city ='Thakurgaon';
-    console.log(city);   // output:Thakurgaon
-    city = 'khulna';
-    console.log(city);    // output:khulna
+  let city = "Thakurgaon";
+  console.log(city); // output:Thakurgaon
+  city = "khulna";
+  console.log(city); // output:khulna
 }
-console.log(city);    // output:Dhaka
+console.log(city); // output:Dhaka
 
-            // some cool things of array
-const array1 = [11,22,33,44,'bappa'];
+// some cool things of array
+const array1 = [11, 22, 33, 44, "bappa"];
 array1.push(55);
 console.log(array1); // [11, 22, 33, 44, "bappa", 55]
 array1.pop();
-console.log(array1);  //  [11, 22, 33, 44, "bappa"]
+console.log(array1); //  [11, 22, 33, 44, "bappa"]
 ```
 
 <!-- <a> </a> -->
@@ -266,49 +266,48 @@ console.log(array1);  //  [11, 22, 33, 44, "bappa"]
 _Console log means :_ console এ লিখে দাও যেইভাবে লিখা আছে সেইভাবেই।
 JavaScript is a forgiven language .
 
-```
-console.log('"This is console.log tutorial by coder bappa"')
-console.time('my code took time:');
-console.log("with out using semicolon")
+```javascript
+console.log('"This is console.log tutorial by coder bappa"');
+console.time("my code took time:");
+console.log("with out using semicolon");
 console.log("using semicolon ");
-console.log(10 + 10)
-console.log(34) //mathematics operation
+console.log(10 + 10);
+console.log(34); //mathematics operation
 console.log(true); //boolen variable
-
 ```
 
 ### 2. write string in javaScript
 
-```
-console.log("using double quotation")
-console.log('using single quotation')
-console.log('"using double quotation under single quotation"')
-console.log(`backtag <h1> <h1/>`)
+```javascript
+console.log("using double quotation");
+console.log("using single quotation");
+console.log('"using double quotation under single quotation"');
+console.log(`backtag <h1> <h1/>`);
 ```
 
 ### 3. console log Array
 
-```
+```javascript
 console.log([11, 22, 33, 44]);
 ```
 
 ### 4. console log e Object lock করতে পারি চাইলে
 
-```
-console.log({ bappa: 'coder bappa', age: '25' })
-console.table({ bappa: 'coder bappa', age: '25' })
-console.warn('this is a warning')
+```javascript
+console.log({ bappa: "coder bappa", age: "25" });
+console.table({ bappa: "coder bappa", age: "25" });
+console.warn("this is a warning");
 
-console.timeEnd('my code took time:');
-console.assert(500 < 179, 'Age > 179 is not possible ');
-console.error('this is an error')
+console.timeEnd("my code took time:");
+console.assert(500 < 179, "Age > 179 is not possible ");
+console.error("this is an error");
 ```
 
 ### 5. console.clear();
 
-```
-console.time('my code took time:');
-console.timeEnd('my code took time:');
+```javascript
+console.time("my code took time:");
+console.timeEnd("my code took time:");
 ```
 
 </a>
