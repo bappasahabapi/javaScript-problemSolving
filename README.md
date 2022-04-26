@@ -1,3 +1,15 @@
+# JavaScript problems & coding solution
+
+> There is a dreamy boy whose name is bappa shaa.
+
+<p align="center">
+  <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
+    <img src=https://bappa-saha.web.app/static/media/bappa.42073d04.png  alt="bappa Logo">
+  </a>
+ </p>
+
+> Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@BappaSaha](https://bappa-saha.web.app) for technical updates.
+
 # Questions:
 
 0.  [Console Log](#0)
@@ -30,6 +42,13 @@
 9.  [Find the max number from the inputs (i code it three ways)-->max-number.js](#9)
 
 10. [Find the min number from the(2/3) inputs --> min-number.js](#10)
+
+11. [Array Related problem --> sum-array.js](#11)
+
+        1. Sum of array using for loop-->sum-array.js
+        2. Sum of array using function-->sum-array.js
+        3. Find the largest number of an array -->largest-element.js
+        4. Find the smallest elements of an array -->smallest-element.js
 
 <a name="1">
 
