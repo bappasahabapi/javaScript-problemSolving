@@ -14,9 +14,9 @@
 
 6.  [Declear Objects and its property](#6)
 
-7.[Mathe and rdandom number code -> mathe.js](#7)
+7.  [Mathe and rdandom number code -> mathe.js](#7)
 
-8.[swap variable / swap without temp/ desturting--> swap.js](#8)
+8.  [swap variable / swap without temp/ desturting--> swap.js](#8)
 
 <a name="1">
 
