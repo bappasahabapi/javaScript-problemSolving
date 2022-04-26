@@ -6,7 +6,16 @@
 
 2.  [While Loop & for loop:](#2)
 
-3.  [Write a function](#3)
+         1.print a number from 0 to 10
+         2.print a number from 1 to 10
+         3.print the even number from 0 -20
+         4. print the odd number from 0-20
+
+3.  [Write a function-->function1.js](#3)
+
+         1. wite a function having no parametaer.
+         2. A function havig input parameters.
+         3. A fucntion havng a return value
 
 4.  [Simple calculation using function:](#4)
 
@@ -17,6 +26,10 @@
 7.  [Mathe and rdandom number code -> mathe.js](#7)
 
 8.  [swap variable / swap without temp/ desturting--> swap.js](#8)
+
+9.  [Find the max number from the inputs (i code it three ways)-->max-number.js](#9)
+
+10. [Find the min number from the(2/3) inputs --> min-number.js](#10)
 
 <a name="1">
 
