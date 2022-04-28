@@ -1,0 +1,6 @@
+<script>
+            document.addEventListener("contextmenu",function(bappa)
+            {
+                 bappa.preventDefault();
+            });
+ </script>
