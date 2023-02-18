@@ -12,6 +12,8 @@
 
 # Questions:
 
+00. [object-destructuring](#00)
+
 0.  [Console Log](#0)
 
 1.  [Apply javaScript Concepts](#1)
@@ -49,6 +51,40 @@
         2. Sum of array using function-->sum-array.js
         3. Find the largest number of an array -->largest-element.js
         4. Find the smallest elements of an array -->smallest-element.js
+
+<a name="00">
+
+## 00.Map-Filter-Find
+
+```js
+const products=[
+    {id:1 , name:'water-bottol',price: 50, color: 'yellow'},
+    {id:2 , name:'pen-bottol', price: 507, color: 'black'},
+    {id:3 , name:'cock-bottol',price: 503, color: 'black'},
+    {id:4 , name:'soft-bottol',price: 506, color: 'red'},
+    {id:5 , name:'note-bottol',price: 507, color: 'pink'}
+]
+
+//TODO: map
+console.log('Map:--------->')
+const product =products.map(product=>console.log(product))
+const productName=products.map(p=>p.name)
+// console.log(productName)
+
+console.log('Filter:-------->')
+//TODO: filter
+
+const price=products.filter(product=>product.price >506)
+const blacks=products.filter(p=>p.color==='black')
+console.log(blacks)
+// console.log(price)
+
+//TODO: find
+console.log('Find:-------->')
+const id =products.find(pId=>pId.id===2)
+console.log(id)
+
+```
 
 <a name="1">
 
