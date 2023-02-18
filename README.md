@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
-    <img src=https://bappa-saha.web.app/static/media/bappa.42073d04.png  alt="bappa Logo">
+
   </a>
  </p>
 
