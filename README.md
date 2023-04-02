@@ -12,12 +12,10 @@
 
 > Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@BappaSaha](https://bappa-saha.web.app) for technical updates.
 
+### 📂 Folder Structure:
 
-###    📂 Folder Structure:
-        
         📂 Advanced-level-js
         📂 js-map-find-filter-destructing
-
 
 # Questions:
 
@@ -62,7 +60,7 @@
         4. Find the smallest elements of an array -->smallest-element.js
 
 <a name="00">
-
+[Go to top:arrow_up: ](#top)
 ## 00.Map-Filter-Find
 
 ```js
