@@ -1,5 +1,7 @@
 # JavaScript problems & coding solution
 
+### VISIT: https://github.com/bappasahabapi/JavaScript-A-Z-
+
 > There is a dreamy boy whose name is bappa shaa.
 
 <p align="center">
@@ -10,42 +12,49 @@
 
 > Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@BappaSaha](https://bappa-saha.web.app) for technical updates.
 
+
+###    📂 Folder Structure:
+        
+        📂 Advanced-level-js
+        📂 js-map-find-filter-destructing
+
+
 # Questions:
 
-00. [object-destructuring](#00)
+0.  [object-destructuring](#00)
 
-0.  [Console Log](#0)
+1.  [Console Log](#0)
 
-1.  [Apply javaScript Concepts](#1)
+2.  [Apply javaScript Concepts](#1)
 
-2.  [While Loop & for loop:](#2)
+3.  [While Loop & for loop:](#2)
 
          1.print a number from 0 to 10
          2.print a number from 1 to 10
          3.print the even number from 0 -20
          4. print the odd number from 0-20
 
-3.  [Write a function-->function1.js](#3)
+4.  [Write a function-->function1.js](#3)
 
          1. wite a function having no parametaer.
          2. A function havig input parameters.
          3. A fucntion havng a return value
 
-4.  [Simple calculation using function:](#4)
+5.  [Simple calculation using function:](#4)
 
-5.  [Factorial code](#5)
+6.  [Factorial code](#5)
 
-6.  [Declear Objects and its property](#6)
+7.  [Declear Objects and its property](#6)
 
-7.  [Mathe and rdandom number code -> mathe.js](#7)
+8.  [Mathe and rdandom number code -> mathe.js](#7)
 
-8.  [swap variable / swap without temp/ desturting--> swap.js](#8)
+9.  [swap variable / swap without temp/ desturting--> swap.js](#8)
 
-9.  [Find the max number from the inputs (i code it three ways)-->max-number.js](#9)
+10. [Find the max number from the inputs (i code it three ways)-->max-number.js](#9)
 
-10. [Find the min number from the(2/3) inputs --> min-number.js](#10)
+11. [Find the min number from the(2/3) inputs --> min-number.js](#10)
 
-11. [Array Related problem --> sum-array.js](#11)
+12. [Array Related problem --> sum-array.js](#11)
 
         1. Sum of array using for loop-->sum-array.js
         2. Sum of array using function-->sum-array.js
@@ -57,33 +66,32 @@
 ## 00.Map-Filter-Find
 
 ```js
-const products=[
-    {id:1 , name:'water-bottol',price: 50, color: 'yellow'},
-    {id:2 , name:'pen-bottol', price: 507, color: 'black'},
-    {id:3 , name:'cock-bottol',price: 503, color: 'black'},
-    {id:4 , name:'soft-bottol',price: 506, color: 'red'},
-    {id:5 , name:'note-bottol',price: 507, color: 'pink'}
-]
+const products = [
+  { id: 1, name: "water-bottol", price: 50, color: "yellow" },
+  { id: 2, name: "pen-bottol", price: 507, color: "black" },
+  { id: 3, name: "cock-bottol", price: 503, color: "black" },
+  { id: 4, name: "soft-bottol", price: 506, color: "red" },
+  { id: 5, name: "note-bottol", price: 507, color: "pink" },
+];
 
 //TODO: map
-console.log('Map:--------->')
-const product =products.map(product=>console.log(product))
-const productName=products.map(p=>p.name)
+console.log("Map:--------->");
+const product = products.map((product) => console.log(product));
+const productName = products.map((p) => p.name);
 // console.log(productName)
 
-console.log('Filter:-------->')
+console.log("Filter:-------->");
 //TODO: filter
 
-const price=products.filter(product=>product.price >506)
-const blacks=products.filter(p=>p.color==='black')
-console.log(blacks)
+const price = products.filter((product) => product.price > 506);
+const blacks = products.filter((p) => p.color === "black");
+console.log(blacks);
 // console.log(price)
 
 //TODO: find
-console.log('Find:-------->')
-const id =products.find(pId=>pId.id===2)
-console.log(id)
-
+console.log("Find:-------->");
+const id = products.find((pId) => pId.id === 2);
+console.log(id);
 ```
 
 <a name="1">
