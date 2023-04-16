@@ -1,1 +1,0 @@
-# pro-Hero-base-pdf
