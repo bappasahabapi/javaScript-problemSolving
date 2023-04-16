@@ -200,10 +200,54 @@ console.log(`I love my ${country}`) */
 
 //TODO: 19- Js Numbers
 
-let a= "10";
+/* let a= "10";
 let b = 10;
+console.log(b)
 
 console.log(isNaN(a))
-console.log(isNaN(b))
+console.log(isNaN(b)) */
+
+// let x =0xFF;
+// console.log(x);
+
+/* let myNumber = 32;
+let ans=myNumber.toString(32);
+console.table(ans); */
+
+
+//Todo: 20- js Number methods
+
+/* let x = 123;
+let numAsString =x.toString();
+console.table({x,numAsString});
+console.log(typeof numAsString);
+let g =(100 + 23).toString();
+console.log([g]) */
+
+
+/* let x = 9.656776;
+let ans=x.toFixed(4);
+console.log(ans) */
+
+
+let n1 =123;
+let n2 = new Number(123);
+
+console.log(typeof n1, typeof n2 )
+console.log(n1==n2);
+console.log(n1===n2);
+
+console.log(Number(true))
+Number(false);
+Number("10");
+Number("  10");
+Number("10  ");
+Number(" 10  ");
+Number("10.33");
+console.table(Number("10,33"));
+Number("10 33");
+console.log(Number("John"))
+
+
 
 
