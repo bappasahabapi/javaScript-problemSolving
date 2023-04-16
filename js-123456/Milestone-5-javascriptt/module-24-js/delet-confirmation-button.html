@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delet Confirmation Button</title>
+</head>
+
+<body>
+    <h2> This is delet confirmation button </h2>
+
+    <section>
+        <h3 id="secret-info"> Click the delet button and remove the secret info</h3>
+        <input id="delet-confirm" type="text" placeholder="please type delet">
+        <button id="delet-btn" disabled>Delet</button>
+    </section>
+
+    <script>
+
+        document.getElementById('delet-btn').addEventListener('click', function () {
+            document.getElementById('secret-info').style.display = 'none';
+        })
+
+        //focus
+        document.getElementById('delet-confirm').
+            addEventListener('focus', function () {
+                // console.log('focused working');
+                document.body.style.backgroundColor = 'red';
+            })
+
+        //blur --> bahire click korte ager moto white hoye jabe
+        document.getElementById('delet-confirm').
+            addEventListener('blur', function () {
+                // console.log('blur is working');
+                document.body.style.backgroundColor = 'white';
+            })
+
+        //function (event)
+        document.getElementById('delet-confirm').
+            addEventListener('keyup', function (event) {
+                // console.log(event.target.value);
+
+                // now check the condition:
+                if (event.target.value == 'delet') {
+                    const deletBtn = document.getElementById('delet-btn')
+                    deletBtn.removeAttribute('disabled');
+                    deletBtn.style.backgroundColor = 'green';
+                    deletBtn.style.color = 'white';
+                }
+                else {
+                    deletBtn.setAttribute('disabled', true)
+                }
+
+            })
+
+        //change --> copy kore paste korle dorte parbe
+        document.getElementById('delet-confirm').
+            addEventListener('change', function () {
+                // console.log('change is working');
+                const deletField = document.getElementById('delet-confirm');
+                console.log(deletField.value);
+            })
+
+
+
+
+
+
+
+        //keydown --> ekta por por dekhabe .
+        // document.getElementById('delet-confirm').
+        //     addEventListener('keydown', function () {
+        //         // console.log('keydown is working');
+        //         const deletField = document.getElementById('delet-confirm');
+        //         console.log(deletField.value);
+        //     })
+
+        //keypress --> ekta piche piche dekhabe.
+        // document.getElementById('delet-confirm').
+        //     addEventListener('keypress', function () {
+        //         // console.log('keypress is working');
+        //         const deletField = document.getElementById('delet-confirm');
+        //         console.log(deletField.value);
+        //     })
+
+
+        //keyup --> ekdom real time dekhabe
+        // document.getElementById('delet-confirm').
+        //     addEventListener('keyup', function () {
+        //         // console.log('keydown is working');
+        //         const deletField = document.getElementById('delet-confirm');
+        //         console.log(deletField.value);
+        //     })
+
+
+    </script>
+
+</body>
+
+</html>

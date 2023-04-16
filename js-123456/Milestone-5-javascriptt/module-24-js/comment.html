@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+</head>
+
+<body>
+    <h1>Add your comment here</h1>
+
+    <section>
+        <div id="comment-container">
+            <p>this is our previous 1st comment</p>
+            <p>this is our previous 2nd comment</p>
+
+        </div>
+        <div>
+            <textarea name="" id="user-comment" cols="40" rows="6"></textarea> <br> <br>
+            <button id="submit-comment">submit-your-comment</button>
+        </div>
+    </section>
+
+    <script>
+
+        // 01-add event handler in the button
+        document.getElementById('submit-comment').addEventListener('click', function () {
+
+            // 02-get or capture user comment from the text-area
+            const userComment = document.getElementById('user-comment');
+
+            // 3. create  new comment  paragraph because text ami paragraph hisebe pathate chai.
+            // comment container e.
+            const newParagaph = document.createElement('p');
+            // const newParagaph = document.createElement('h1');
+            newParagaph.innerText = userComment.value;
+
+            // 4.append the comment means --> comment add kora comment container e.
+            const commentContainer = document.getElementById('comment-container');
+            commentContainer.appendChild(newParagaph);
+
+            //5.clean the comment box
+            userComment.value = '';
+
+
+        })
+    </script>
+</body>
+
+</html>

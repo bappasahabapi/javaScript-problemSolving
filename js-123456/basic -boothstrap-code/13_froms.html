@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>froms input</title>
+</head>
+<body>
+
+    <h1 class="display-3 text-center my-4">Forms and input</h1>
+    <div class="container">
+
+                                 <!--FROM-->
+                                 <h3>Form</h3>
+        <form >
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control bg-primary" type="text" id="name" placeholder="Enter name" >
+                    
+                </div>
+
+                <div class="form-group" >
+                    <label for="email">Email address </label>
+                    <input type="email" id=" email" placeholder=" Enter email">
+                    <small>your email will not be share with anyone</small>
+                   
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address </label>
+                    <input class="form-control form-control-lg" type="email" id=" email" placeholder=" Enter email">
+                    <small class="form-text text-muted">your email will not be share with anyone</small>
+                   
+                </div>
+                <div class="form-group">                       <!--readonly-->
+                    <label for="password ">password </label>
+                    <input class="form-control" type="password" id="password" placeholder=" Enter password" readonly>  
+                   
+                </div>
+
+                <div>
+                    <label ><h4>Gender</h4></label>
+                    <select>
+                        <option value="#">male</option>
+                        <option value="">female</option>
+
+
+                    </select>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="gender">Gender1</label>
+                    <select class="form-control" id="gender">
+                        <option value="#">male</option>
+                        <option value="">female</option>
+
+                    </select>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control"  id="message"  rows="2"></textarea>
+                </div>
+
+                <h4>file upload</h4>
+                <div class="form-group">
+                    <label for="file">File input </label>
+                    <input class="form-control-file" type="file" id="file">
+                    <small class="form-text text-muted" id="fileHelp">max 3mb size</small>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend class="bg-success">what are you using this service for??</legend>
+                    <div  class="form-check">
+                        <label class="form-check-level">
+                            <input class="form-check-input" type="radio" value="option1" checked>
+                            personal
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="">
+                            <input type="radio" value="option2" checked>
+                           commercial
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label for="">
+                            <input type="radio" value="option3" disabled>
+                            testing
+                        </label>
+                    </div>
+                </fieldset><br>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                sign up for newsletter
+                            </label>
+                        </div>
+                        <button class="bg-primary mt-3">Submit</button><br><br>
+
+
+                                            <!--INLINE FORM-->
+                                <h3 class="display-4 text-center my-4">INLINE FORM</h3>
+
+                                <form action="">
+                                    <input type="text" id="username" placeholder=" enrter username" >
+                                    <input type="text" id="password" placeholder="passoword">
+                                    <div>
+                                        <label for="">
+                                            <input type="checkbox" name="" id="">
+                                            Remember me
+                                        </label>
+                                    </div>
+
+
+                                </form> <br><br>
+
+                                
+                                <form class="form-inline">
+                                    <input class="form-control mr-3" type="text" id="username" placeholder=" enrter username" >
+                                    <input class="form-control mr-2" type="text" id="password" placeholder="passoword">
+                                    <div class="form-check">
+                                        <label class="form-check-label mr-2" for="">
+                                            <input class="form-control mr-2 form-check-input" type="checkbox" name="" id="">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-warning">Submmit</button>
+
+
+                                </form><br>
+
+                                                     <!--VALIDATION-->
+                                             <h3 class="display-4 text-center my-4">VALIDATION</h3>
+                                            
+                                        <div class="form-group">
+
+                                            <label for="username">Username</label>
+                                            <input class="form-control is-valid" type="text" name="" id="username">
+
+                                            <div class="valid-feedback">username available</div>
+                                            <small class="form-text text-muted">must be at least 7 characters</small>
+
+                                        </div><br><br>
+
+                                        <div class="form-group">
+                                            <label for="password">password</label>
+                                            <input class="form-control is-invalid" type="text" name="" id="">
+                                            <div class="invalid-feedback">That password is not save </div>
+                                            <small class="text-muted">please use a valid password</small>
+                                        </div>
+
+
+
+               
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <div style="margin-bottom: 100px;"></div>
+
+
+    <!----------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

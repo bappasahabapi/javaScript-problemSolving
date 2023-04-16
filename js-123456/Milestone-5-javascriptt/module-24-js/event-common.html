@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Event common </h1> <br>
+
+    <p id="clicking-method"></p>
+    <input id="name-field" type="text">
+    <button id="update">Update</button> <br> <br>
+
+    <button onclick="handleJustFunctionClick()">just function </button>
+    <button id="handle-event">direct event addEventLisener </button>
+
+    <script>
+        // using function
+        function handleJustFunctionClick() {
+            const paragraph = document.getElementById('clicking-method');
+            paragraph.innerText = 'set by using function';
+        }
+
+        // direct handle event
+        document.getElementById('handle-event').addEventListener('click', function () {
+            const pp = document.getElementById('clicking-method');
+            pp.innerText = ' set it directly ';
+
+        })
+        //update button direct with the input field
+        document.getElementById('update').addEventListener('click', function () {
+
+            const nameField = document.getElementById('name-field');
+
+            const pp = document.getElementById('clicking-method');
+            pp.innerText = nameField.value;
+            nameField.value = '';
+
+
+            // console.log(nameField.value);
+            // console.log(nameField.innerText); // input e kaj korbe na
+
+            //input er khetre text nite chaile id nite hoi.
+            //ekhane inner text er poriborte value ase.
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

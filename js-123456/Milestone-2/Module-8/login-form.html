@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in form</title>
+    <script src="https://kit.fontawesome.com/0a82a40ac1.js" crossorigin="anonymous"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .login-container {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form input,
+        button {
+            font-size: 1.3em;
+            margin-top: 10px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            font-weight: 700;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        nav a {
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+            margin-right: 20px;
+            font-size: 1.3em;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About Us</a>
+            </span>
+            <!-- <span>
+                <a href=""><i class="fas fa-search"></i> Search </a>
+            </span> -->
+            <span>
+                <a href=""><i class="fas fa-user"></i></a>
+                <a href=""><i class="fas fa-search"></i></a>
+            </span>
+        </nav>
+    </header>
+    <h1>This is our basic Log-in form </h1>
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h2>Login</h2>
+            <input type="email" name="name" id="" placeholder="Enter your email" required>
+            <input type="password" name="password" id="" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+
+    </section>
+
+</body>
+
+</html>

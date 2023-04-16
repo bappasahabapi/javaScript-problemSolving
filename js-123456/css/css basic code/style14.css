@@ -1,0 +1,8 @@
+body{
+background-color: pink;
+background-image:url("C.jpg");
+background-repeat: no-repeat;
+background-position: top;
+background-attachment: fixed;
+
+}

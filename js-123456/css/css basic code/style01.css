@@ -1,0 +1,16 @@
+#section1{
+	background-color:green;
+	
+}
+#section1 h1{
+	color:white;
+}
+#section1 p{
+	color:yellow;
+}
+.style01{
+	color: red;
+}
+.style02{
+	font-size:30px;
+}

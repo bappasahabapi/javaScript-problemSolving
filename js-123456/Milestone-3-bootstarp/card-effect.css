@@ -1,0 +1,13 @@
+/* video,img {
+    max-width: 100%;
+} */
+
+.card {
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 21, 21, 0.192);
+    margin-bottom: 1.5em;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
