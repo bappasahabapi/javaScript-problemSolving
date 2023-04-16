@@ -1,5 +1,3 @@
-# javaScript-problemSolving
-
 # JavaScript problems & coding solution
 
 ### VISIT: https://github.com/bappasahabapi/JavaScript-A-Z-
