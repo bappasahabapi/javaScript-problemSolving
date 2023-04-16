@@ -1,0 +1,1 @@
+`Literals:` ফিক্সড ভালুএ ই হল literals.
