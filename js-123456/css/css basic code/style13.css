@@ -1,0 +1,16 @@
+#section1{
+    padding: 50px;
+    width: 200px;
+    background-color: aqua;
+    margin-bottom: 30px;
+}
+#section2{
+    padding: 20px 40px;
+   width: 400px;
+    background-color:greenyellow;
+}
+#body{
+    background-color: pink;
+    margin: 0px;
+    padding: 0px;
+}

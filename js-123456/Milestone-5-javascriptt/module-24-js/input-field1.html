@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form field</title>
+</head>
+
+<body>
+    <h1>How to take data from input field</h1>
+
+    <h1 id="clicking"></h1>
+    <input id="input-field" type="text"> <br> <br>
+    <button id="update-btn"> UpdateText</button>
+
+
+
+    <script>
+        document.getElementById('update-btn').addEventListener('click', function () {
+
+            const inputField = document.getElementById('input-field');
+            const setText = document.getElementById('clicking');
+
+            setText.innerText = inputField.value; // input theke value niya h1 k dibe 
+            inputField.value = '';  // value niye nibar por none kore dibe
+
+        })
+    </script>
+</body>
+
+</html>

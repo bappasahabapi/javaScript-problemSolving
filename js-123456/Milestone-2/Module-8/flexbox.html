@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            
+            border: 2px dotted green;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly;  */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+
+        }
+        .container1{
+            margin-top: 40px;
+            border: 2px dotted green;
+            height: 400px;
+            display: flex;
+            align-items: stretch;
+        }
+        .box{
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            font-size: 3em;
+            /* height: 200px; */
+            width: 200px;
+            border: 3px dashed orchid;
+        }
+        #box-2{
+            order:1;
+            flex: 1;
+            /* flex-grow: 1; */
+        }
+        #box-1{
+            /* flex: 1; */
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>i am flexibox right now</h1>
+    <div class="container">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+    </div>
+    <div class="container1">
+        <div id="box-1" class="box">BOX-1</div>
+        <div id="box-2" class="box">BOX-2</div>
+        <!-- <div class="box">BOX-3</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-using grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: teal;
+        }
+        section{
+            height: 100vh;
+            background-color: tomato;
+            
+            position: relative;
+            display: grid;
+            place-items: center;
+            /* place-content: center; */         
+        }
+        .box{               
+                 /* common to all start */
+           background-color:darkturquoise;
+           height: 200px;
+           width: 200px;
+           text-align: center;
+           font-size: 19px;
+           padding: 5px;
+            /* common to all end  */        
+        }
+    </style>
+</head>
+<body>
+            
+    <section>
+        <div class="box">
+                        coded by bappa saha
+                        <br>  <br>
+                        <p>  parent= </p>
+                        <p>  position: relative;  </p>
+                        <p>  display: grid; </p>
+                        <p>  place-items: center; </p>                                
+        </div>
+    </section>
+</body>
+</html>
