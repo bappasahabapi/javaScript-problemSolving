@@ -1,4 +1,4 @@
-//todo: 21-array
+//todo: 21,22,23,24-array
 
 /* const cars = ["Saab", "Volvo", "BMW",67, {},null,undefined,'last-element-mango'];
 console.log(typeof cars);
