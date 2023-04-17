@@ -61,3 +61,33 @@ const person={name:'bappa',age:35};
 console.log(typeof numbers, typeof person);
 console.log(Array.isArray(numbers));
 console.log(Array.isArray(person)); */
+
+
+//todo: 22-convert arrary to string
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.push('new');
+// // document.getElementById("demo").innerHTML = fruits.toString();
+// console.table(fruits);
+// console.log(fruits.toString());
+
+// fruits.pop('new');
+// console.log(fruits.join(" "));
+
+// fruits.shift("Banana");
+// console.log(fruits.join(" "));
+
+// todo: array splice method
+
+/* const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.table(fruits);
+
+const fruits1=fruits.splice(2, 0, "Lemon", "Kiwi"); */
+
+
+// todo:array slice()
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1,3);
+// const citrus = fruits.slice(3);
+console.table(citrus)
+
