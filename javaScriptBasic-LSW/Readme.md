@@ -87,7 +87,7 @@ const duplicate =numbers.filter((value,index, array)=>{
 console.log(duplicate);
 
 
-//todo: 6- find the unique number from an array
+//todo: 7- find the unique number from an array
 
 const numbers1 =[1,2,4,5,6,6,1,5,76,,89,76,90,25];
 
