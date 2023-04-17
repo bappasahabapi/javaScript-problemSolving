@@ -1,6 +1,7 @@
 # JavaScript problems & coding solution
 
-### VISIT: https://github.com/bappasahabapi/JavaScript-A-Z-
+### VISIT: https://github.com/bappasahabapi/js-milestone123456
+
 
 > There is a dreamy boy whose name is bappa shaa.
 
@@ -16,6 +17,8 @@
 
         📂 Advanced-level-js
         📂 js-map-find-filter-destructing
+        📂 Calculted codes
+        📂 javaScriptBasic-LWS
 
 # Questions:
 
