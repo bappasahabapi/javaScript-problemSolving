@@ -419,10 +419,66 @@ console.log({newArray}) */
 
 
 //todo: spread(...)
-const q1 = ["Jan", "Feb", "Mar"];
-const q2 = ["Apr", "May", "Jun"];
-const q3 = ["Jul", "Aug", "Sep"];
-const q4 = ["Oct", "Nov", "May"];
+// const q1 = ["Jan", "Feb", "Mar"];
+// const q2 = ["Apr", "May", "Jun"];
+// const q3 = ["Jul", "Aug", "Sep"];
+// const q4 = ["Oct", "Nov", "May"];
 
-const year = [...q1, ...q2, ...q3, ...q4];
-console.table(year)
+// const year = [...q1, ...q2, ...q3, ...q4];
+// console.table(year)
+
+
+// todo: 26-dates
+
+/* const d= new Date();
+console.log(d);
+console.log(d.toUTCString())
+console.log(d.toDateString()); */
+
+//TODO: 30-Math()
+
+/* console.log(Math.PI);
+console.log(Math.round(4.6))
+console.log(Math.ceil(4.1))
+console.log(Math.ceil(4.0))
+console.log(Math.min(0, 150, 30, 20, -8, -200))
+console.log(Math.max(0, 150, 30, 20, -8, -200)) */
+
+//todo: 31- Math.random()
+
+// Returns a random integer from 0 to 9:
+/* 
+console.log((Math.random() * 10))
+console.log(Math.floor(Math.random() * 10));
+
+console.log((Math.random() * 11))
+console.log((Math.random() * 100))
+console.log((Math.random() * 101)) 
+*/
+
+
+/* 
+console.log(Math.random());
+console.log(Math.random() *10);
+console.log(Math.floor(Math.random() *10));
+console.log('<-->')
+
+
+console.log(Math.random() *11);
+console.log(Math.floor(Math.random() *11));
+console.log('<-->')
+
+
+console.log(Math.floor(Math.random() *10)+1);
+console.log(Math.floor(Math.random() *100)+1);
+console.log('<-->')
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }
+
+//   This JavaScript function always returns a random number between min and max (both included):
+
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  } */

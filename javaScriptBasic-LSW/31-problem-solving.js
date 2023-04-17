@@ -1,19 +1,3 @@
-`todo:1- লুডু খেলায় আমরা কিভাবে ১ থেকে ৬ সংখ্যা randomly print করতে পারি । `
-
-`todo:2- সবার নাম কিভাবে Alphabetically  সাজাতে পারি । `
-
-`todo:3- how to sort roll number low to high`
-
-`todo: 4- is the year leap year or not `
-
-`todo: 5- how many vowels in sentence`
-
-`todo: 6- find the duplicate number from an array`
-
-`todo: 7- find the unique number from an array`
-
-```js
-
 //todo:1- লুডু খেলায় আমরা কিভাবে ১ থেকে ৬ সংখ্যা randomly print করতে পারি । 
 
 function getRandomNumber(min, max){
@@ -96,7 +80,3 @@ const unique =numbers.filter((value,index, array)=>{
 });
 console.log('---');
 console.log(unique);
-
-
-
-```
