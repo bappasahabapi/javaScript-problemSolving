@@ -12,9 +12,8 @@ const product =products.map(product=>console.log(product))
 const productName=products.map(p=>p.name)
 // console.log(productName)
 
-console.log('Filter:-------->')
 //TODO: filter
-
+console.log('Filter:-------->')
 const price=products.filter(product=>product.price >506)
 const blacks=products.filter(p=>p.color==='black')
 console.log(blacks)
