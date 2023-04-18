@@ -530,10 +530,10 @@ for (const x in person) {
     console.log(x,":",person[x])
 }; */
 
-const numbers = [45, 4, 9, 16, 25];
+/* const numbers = [45, 4, 9, 16, 25];
 for(let number in numbers){
     console.log(number,":",numbers[number])
-}
+} */
 
 
 //todo: for-of-loop: for arrays
@@ -542,3 +542,48 @@ for(let number in numbers){
 // for(let number of numbers){
 //     console.log(number)
 // }
+
+// todo: 41- Sets
+
+/* // Create a Set
+const letters = new Set(["a","b","c"]);
+const mySet =new Set();
+
+letters.add("e");
+letters.add("p");
+letters.add("a");
+letters.add("a");
+letters.add("a");
+console.log(letters);
+console.log(letters.size) */
+/* 
+const letters = new Set(["a","b","c","f","g","h"]);
+
+let text ="";
+letters.forEach(value=>{
+    return text=text+value
+});
+console.log(text) */
+
+
+//todo: 43-type of operator
+/*
+ "John".constructor                // Returns function String()  {[native code]}
+(3.14).constructor                // Returns function Number()  {[native code]}
+false.constructor                 // Returns function Boolean() {[native code]}
+[1,2,3,4].constructor             // Returns function Array()   {[native code]}
+{name:'John',age:34}.constructor  // Returns function Object()  {[native code]}
+new Date().constructor            // Returns function Date()    {[native code]}
+function () {}.constructor        // Returns function Function(){[native code]}
+ */
+
+function isArray(myArray){
+    // console.log(myArray.constructor);
+    // console.log(myArray.constructor.toString());
+//    return console.log(myArray.constructor.toString().indexOf('Array')> -1);
+    return myArray.constructor ===Array;
+
+};
+
+const arr =[1,3,5,2,8]
+console.log(isArray(arr));
