@@ -577,7 +577,7 @@ new Date().constructor            // Returns function Date()    {[native code]}
 function () {}.constructor        // Returns function Function(){[native code]}
  */
 
-function isArray(myArray){
+/* function isArray(myArray){
     // console.log(myArray.constructor);
     // console.log(myArray.constructor.toString());
 //    return console.log(myArray.constructor.toString().indexOf('Array')> -1);
@@ -586,4 +586,84 @@ function isArray(myArray){
 };
 
 const arr =[1,3,5,2,8]
-console.log(isArray(arr));
+console.log(isArray(arr)); */
+
+
+//todo: 44-type conversion
+
+/* let x="80789";
+console.log(Number("888"));
+console.log(Number(""));
+
+let y=+x;
+console.log(y);
+ */
+
+// todo: 46- regular expression
+
+/* 
+let text = "Visit W3Schools!";
+let n = text.search("W3Schools");
+let n1 =text.search(/w3Schools/);
+let n2 =text.search(/w3Schools/i);
+
+console.log(n);
+console.log(n1);
+console.log(n2); 
+*/
+
+/* 
+let text = "Visit Microsoft dada";
+let result = text.replace("Microsoft", "Bappa");
+let result1 = text.replace(/microsoft/i, "Bappa");
+
+console.log(result);
+console.log(result1);
+ */
+
+/* 
+let text ="Visit Microsoft  not good at microsoft";
+let ans =text.replace(/microsoft/i,"google");
+let ans1 =text.replace(/microsoft/ig,"google");
+
+console.log(ans);
+console.log(ans1);
+
+*/
+
+/* 
+let pattern ="There is a abcd boy and abcef";
+let text = "123456789";
+let ans = pattern.match(/[is]/g);
+let ans1 =text.match(/[1-4]/g);
+let ans2 =text.search(/[1-4]/g);
+
+
+console.log(ans);
+console.log(ans1);
+console.log(ans2);
+ */
+
+
+//todo: 47-js errors
+
+// let x='';
+// let x=5;
+let x=12;
+
+try {
+    if (x == "") throw "empty";
+    if (isNaN(x)) throw "not a number";
+    x = Number(x);
+    if (x < 5) throw "too low";
+    if (x > 10) throw {
+        message:`${x} is too high`,
+        name:"High error"
+    }
+}
+catch (err) {
+   console.log(err)
+}
+finally{
+    console.log("Pass the test");
+}
