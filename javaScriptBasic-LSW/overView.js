@@ -381,9 +381,9 @@ console.log(Math.max.applly) */
 
 // todo:24-array Iterators:
 
-const numbers =[45,4,9,16,25];
+// const numbers = [45, 4, 9, 16, 25];
 
-function myFunction(total,value,index,array){
+function myFunction(total, value, index, array) {
     /* // console.log(index,":",value);
     console.log(index);
     console.log(value);
@@ -482,3 +482,63 @@ function getRndInteger(min, max) {
   function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   } */
+
+
+
+//todo: 32-boolean data types
+
+/* let x =null;
+// let x ='';
+// let x =-0;
+console.log(Boolean(x)); */
+
+
+//todo: 33-ternary(conditional)operator
+/* 
+let age = 18;
+let roll = 20;
+if (age >= 18)
+    console.log('yes')
+else
+    console.log('no')
+
+console.log((roll > 20 ? "yes" : "no"));
+
+console.log(roll >= 20 ? (roll < 30) ? "Big" : "small" : no); */
+
+
+//todo: The Nullish Coalescing Operator (??)
+/* 
+The ?? operator returns the first argument if it is not nullish (null or undefined).Otherwise it returns the second argument */
+
+/* let name = "null";
+// let name = null;
+let text = "undefined";
+// let text = "missing";
+let result = name ?? text;
+
+console.log(result) */
+
+
+// todo: 33-conditions
+
+// todo: for-in-loop : for objects
+
+/* const person = {fname:"Bappa", lname:"Saha", age:25};
+
+for (const x in person) {
+    console.log(x,":",person[x])
+}; */
+
+const numbers = [45, 4, 9, 16, 25];
+for(let number in numbers){
+    console.log(number,":",numbers[number])
+}
+
+
+//todo: for-of-loop: for arrays
+
+// const numbers = [45, 4, 9, 16, 25];
+// for(let number of numbers){
+//     console.log(number)
+// }
