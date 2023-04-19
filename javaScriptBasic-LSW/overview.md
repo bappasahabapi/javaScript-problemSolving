@@ -1,82 +1,82 @@
-//todo:
-// let x=7;
-// let y=17;
-// if (true) {
-//     let x =6;
-//     console.log({x});
-// };
-// console.table({x,y})
+```js
+todo:
+let x=7;
+let y=17;
+if (true) {
+    let x =6;
+    console.log({x});
+};
+console.table({x,y})
 
 
 
 //todo:
-// 1st : var carName; 
-// then carName =undinied set kore
-// 2nd : carName = Saab;
-// 3rdd : console.table({carName}); exectue hoi.
+1st : var carName; 
+then carName =undinied set kore
+2nd : carName = Saab;
+3rdd : console.table({carName}); exectue hoi.
 
 
-/*
- carName = "Saab";
+
+carName = "Saab";
 var carName ;
 console.table({carName});
 
-*/
 
-/*  carName = "Saab";
+
+carName = "Saab";
 let carName ;
-console.table({carName}); */
+console.table({carName});
 
 //todo: string join
 
-/* let text1 ='bappa';
+let text1 ='bappa';
 let text2 ='saha';
 
 let stringConcat =text1+ " "+ text2;
 // console.log({ans})
-console.table({stringConcat}) */
+console.table({stringConcat})
 
 // todo: add string and nuber 
-/* 
+
 let a ='5';
 let b =6;
 
 let addStringAndNumber = (a+b);
 // let addStringAndNumber = parseInt(a+b);
 
-console.table({addStringAndNumber}); */
+console.table({addStringAndNumber});
 
 // todo: data types
-
-/* const a =1000_00;
+const a =1000_00;
 const b =123e5;
-console.table({a,b}); */
+console.table({a,b});
 
-// const cars = ["Saab", "Volvo", "BMW"];
-// console.table({cars});
+const cars = ["Saab", "Volvo", "BMW"];
+console.table({cars});
 
+output:
+┌─────────┬────────┬─────────┬───────┐
+│ (index) │   0    │    1    │   2   │
+├─────────┼────────┼─────────┼───────┤
+│  cars   │ 'Saab' │ 'Volvo' │ 'BMW' │
+└─────────┴────────┴─────────┴───────┘
 
-// ┌─────────┬────────┬─────────┬───────┐
-// │ (index) │   0    │    1    │   2   │
-// ├─────────┼────────┼─────────┼───────┤
-// │  cars   │ 'Saab' │ 'Volvo' │ 'BMW' │
-// └─────────┴────────┴─────────┴───────┘
-/* 
 const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 
 console.table({person});
 console.table(person);
-console.table(typeof person); */
+console.table(typeof person);
 
 
 //todo: function
 
-/* function sleep() {
+function sleep() {
     console.log("Bappa is sleeping-1");
 }
 console.log('sleeping-2');
 console.log(typeof sleep)
-sleep(); */
+sleep();
 
 /* function sleeping(name){
     // console.log(name+" "+"is sleeping");
@@ -751,7 +751,7 @@ sakib.father.printName();
 //todo: Explicite Binding
 
 
-/* var printName= function (){
+ var printName= function (){
     console.log(this.name)
 };
 
@@ -764,11 +764,11 @@ var sakib= {
     // }
 };
 
-printName.call(sakib) */
+printName.call(sakib) 
 
 
 //todo: new Binding
-/* 
+
 function player(name,age){
     //let this =Object.create(null)
     this.name =name;
@@ -778,7 +778,7 @@ function player(name,age){
     //return this;
 };
 
-var obj= new player("Sakib",34); */
+var obj= new player("Sakib",34);
 
 
 //todo: window Binding
@@ -786,7 +786,7 @@ var obj= new player("Sakib",34); */
 
 //todo: 53- class
 
-/* class Car {
+class Car {
     constructor(name, year) {
       this.name = name;
       this.year = year;
@@ -802,12 +802,12 @@ var obj= new player("Sakib",34); */
 //   console.log(myCar1);
 //   console.log(myCar2);
 
-  myCar1.methodPlay(); */
+  myCar1.methodPlay();
 
 
 //todo: 54-JSON
 //todo; convert text to valid json format
-/* 
+
 let text = '{ "employees" : [' +
 '{ "firstName":"John" , "lastName":"Doe" },' +
 '{ "firstName":"Anna" , "lastName":"Smith" },' +
@@ -822,16 +822,19 @@ console.log('------------------------');
 console.log('------------------------');
 console.log(obj?.employees);
 console.log(obj.employees[0]);
-console.log(obj.employees[0].firstName); */
+console.log(obj.employees[0].firstName);
 
 
 //todo: convert valid js object to text:
 
-/* let person={
+let person={
     firstName:"bappa",
     lastName:"saha",
     age:26
 };
 
 const convertTojson =JSON.stringify(person);
-console.log(convertTojson); */
+console.log(convertTojson);
+
+
+```
