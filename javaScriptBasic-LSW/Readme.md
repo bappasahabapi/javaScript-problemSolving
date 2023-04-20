@@ -114,8 +114,9 @@ const unique =numbers.filter((value,index, array)=>{
 });
 console.log('---');
 console.log(unique);
+```
 
-//todo: 8- how many time "bappa" word is used in the sentence and what is the first position where bappa word is used?
+**//todo: 8- how many time "bappa" word is used in the sentence and what is the first position where bappa word is used?**
 
 /* 
 This type of problem is solved by using regular expression 
@@ -126,8 +127,7 @@ This type of problem is solved by using regular expression
 solve:
 first position mane search() ta dilei hbe
 
-
-*/
+```js
 
 const sentence ="There is a dreamy boy nameed Bappa.There is a dreamy boy nameed bappa.There is a dreamy boy nameed bappa.There is a dreamy boy."
 
@@ -139,11 +139,11 @@ console.log(matches, occurances)
 let position =sentence.search(/bappa/i);
 position= position>=0 ? position : "not found";
 console.log(position)
+```
 
+**todo: 9- input: linearSearch(['a','b','c','d','c'], 'c'); output: 2 or 'not found' ; problem: linearSearch() টি  function implement করে দেখান ।**
 
-//todo: 9- input: linearSearch(['a','b','c','d','c'], 'c'); output: 2 or 'not found' ; problem: linearSearch() টি  function implement করে দেখান । 
-
-
+```js
 function linearSearch(arr,value){
 
     const length =arr.length;
@@ -156,11 +156,11 @@ function linearSearch(arr,value){
 }
 
 console.log(linearSearch(['a','b','c','d','c'], 'c'));
+```
 
+**todo: 10- find out the max big string from an array and show the index of the string**
 
-//todo: 10- find out the max big string from an array and show the index of the string
-
-
+```js
 function longestString(names){
     let longestWord ='';
     for(n of names){
@@ -175,11 +175,12 @@ function longestString(names){
 const nameArray=['Bappa saha', 'learn with bappa','akash','akash mohajoon','dad'];
 
 console.log(longestString(nameArray));
+```
 
 
+**todo: 11- ১ -১০০ পর্যন্ত যেই সংখ্যা গুলো ৩,৫ এবং ৩,৫ উভয় সংখ্যা দিয়ে বিভাজ্য তা বের কর ;**
 
-//todo: 11- ১ -১০০ পর্যন্ত যেই সংখ্যা গুলো ৩,৫ এবং ৩,৫ উভয় সংখ্যা দিয়ে বিভাজ্য তা বের কর ;
-
+```js
 function fooBar(number){
     
     for (let i =1; i<=number; i++){
@@ -199,9 +200,9 @@ function fooBar(number){
 }
 
 console.log(fooBar(100));
+```
 
-
-//todo: 12- Array থেকে কিভাবে 'falsy value' খুঁজে বের করে বাদ দিতে পারি? 
+**todo: 12- Array থেকে কিভাবে 'falsy value' খুঁজে বের করে বাদ দিতে পারি?**
 
 /* 
 falsy values are: 6 types
@@ -209,7 +210,7 @@ falsy values are: 6 types
 solve: using filter()
 
 */
-
+```js
 const mixedArr =[
     "bws",
     undefined,
@@ -240,9 +241,10 @@ console.table(trueArray)
 // const  trueArray1 =mixedArr.filter(Boolean)
 // console.table(trueArray1)
 
+```
+**todo: 13- Object থেকে কিভাবে 'falsy value' খুঁজে বের করে বাদ দিতে পারি?**
 
-//todo: 13- Object থেকে কিভাবে 'falsy value' খুঁজে বের করে বাদ দিতে পারি?
-
+```js
 const obj ={
 
     a:"bws",
