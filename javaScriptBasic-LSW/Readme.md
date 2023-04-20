@@ -30,41 +30,45 @@
 
 
 
+
+**🥇todo:1- লুডু খেলায় আমরা কিভাবে ১ থেকে ৬ সংখ্যা randomly print করতে পারি ।**
+
 ```js
-
-//todo:1- লুডু খেলায় আমরা কিভাবে ১ থেকে ৬ সংখ্যা randomly print করতে পারি । 
-
 function getRandomNumber(min, max){
     return Math.floor(Math.random() *(max-min +1)) + min;
 }
 
 console.log(getRandomNumber(1,6));
 
+```
 
-// todo:2- সবার নাম কিভাবে Alphabetically  সাজাতে পারি । 
-
+**🥇todo:2- সবার নাম কিভাবে Alphabetically  সাজাতে পারি ।**
+```js
 const std = ["bappa","kaoa","dafda","apple"];
 console.log(std.sort());
+```
 
-// todo:3- how to sort roll number low to high
+**🥇todo:3- how to sort roll number low to high**
+```js
 
-// const rollNumebers = [40, 100, 1, 5, 25, 10];
+const rollNumebers = [40, 100, 1, 5, 25, 10];
 
-// function myFuc(a,b){
-//     return a-b;
-// };
+function myFuc(a,b){
+    return a-b;
+};
 
-// console.log(rollNumebers.sort(myFuc))
+console.log(rollNumebers.sort(myFuc))
 
 
 //shortcut
 const rollNumebers = [40, 100, 1, 5, 25, 10];
 console.log(rollNumebers.sort((a,b)=>{return a-b})) // assending
 // console.log(rollNumebers.sort((a,b)=>{return b-a})) //decending
+```
 
+**🥇todo: 4- is the year leap year or not**
 
-//todo: 4- is the year leap year or not 
-
+```js
 function isLeapyear(year){
     if(year%400 ===0 || ((year %4 ===0) && (year % 100 !==0))){
         console.log(`${year} is Leap year`);
@@ -75,8 +79,11 @@ function isLeapyear(year){
 
 isLeapyear(2020);
 
-//todo: 5- how many vowels in sentence
+```
 
+**🥇todo: 5- how many vowels in sentence**
+
+```js
 const vowels =["a","e","i","o","u","A","E","I","O","U"];
 
 const countVowel=(sentence)=>{
@@ -92,10 +99,10 @@ const countVowel=(sentence)=>{
 };
 
 console.log(countVowel("I love Bangladesh"));
+```
 
-
-//todo: 6- find the duplicate number from an array
-
+**🥇todo: 6- find the duplicate number from an array**
+```js
 const numbers =[1,2,4,5,6,6,1,5,76,,89,76,90,25];
 
 const duplicate =numbers.filter((value,index, array)=>{
@@ -103,10 +110,11 @@ const duplicate =numbers.filter((value,index, array)=>{
 });
 
 console.log(duplicate);
+```
 
+**🥇todo: 7- find the unique number from an array**
 
-//todo: 7- find the unique number from an array
-
+```js
 const numbers1 =[1,2,4,5,6,6,1,5,76,,89,76,90,25];
 
 const unique =numbers.filter((value,index, array)=>{
@@ -116,9 +124,9 @@ console.log('---');
 console.log(unique);
 ```
 
-**//todo: 8- how many time "bappa" word is used in the sentence and what is the first position where bappa word is used?**
+**🥇todo: 8- how many time "bappa" word is used in the sentence and what is the first position where bappa word is used?**
 
-/* 
+
 This type of problem is solved by using regular expression 
 1. regular exp er vittore search string ta dibo
 2. ig flag ta dibo.
@@ -141,7 +149,7 @@ position= position>=0 ? position : "not found";
 console.log(position)
 ```
 
-**todo: 9- input: linearSearch(['a','b','c','d','c'], 'c'); output: 2 or 'not found' ; problem: linearSearch() টি  function implement করে দেখান ।**
+**🥇todo: 9- input: linearSearch(['a','b','c','d','c'], 'c'); output: 2 or 'not found' ; problem: linearSearch() টি  function implement করে দেখান ।**
 
 ```js
 function linearSearch(arr,value){
@@ -158,7 +166,7 @@ function linearSearch(arr,value){
 console.log(linearSearch(['a','b','c','d','c'], 'c'));
 ```
 
-**todo: 10- find out the max big string from an array and show the index of the string**
+**🥇todo: 10- find out the max big string from an array and show the index of the string**
 
 ```js
 function longestString(names){
@@ -178,7 +186,7 @@ console.log(longestString(nameArray));
 ```
 
 
-**todo: 11- ১ -১০০ পর্যন্ত যেই সংখ্যা গুলো ৩,৫ এবং ৩,৫ উভয় সংখ্যা দিয়ে বিভাজ্য তা বের কর ;**
+**🥇todo: 11- ১ -১০০ পর্যন্ত যেই সংখ্যা গুলো ৩,৫ এবং ৩,৫ উভয় সংখ্যা দিয়ে বিভাজ্য তা বের কর ;**
 
 ```js
 function fooBar(number){
@@ -202,7 +210,7 @@ function fooBar(number){
 console.log(fooBar(100));
 ```
 
-**todo: 12- Array থেকে কিভাবে 'falsy value' খুঁজে বের করে বাদ দিতে পারি?**
+**🥇todo: 12- Array থেকে কিভাবে 'falsy value' খুঁজে বের করে বাদ দিতে পারি?**
 
 /* 
 falsy values are: 6 types
