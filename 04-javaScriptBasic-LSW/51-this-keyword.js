@@ -9,15 +9,15 @@
  */
 
 
-/*
+
  var printPlayerName =function(name){
     console.log(name)
 }
 printPlayerName() ; 
-*/
+
 
 //todo: ---> 01. Implicit binding
-/*
+
  var sakib= {
     name:"Sakib",
     age:35,
@@ -27,10 +27,10 @@ printPlayerName() ;
     }
 }
 sakib.printPlayerName();
- */
 
 
-/* 
+
+
 var printPlayerNameFunction =function(obj){
     obj.printPlayerName=function(){
         console.log(this.name)
@@ -52,9 +52,9 @@ printPlayerNameFunction(tamim);
 rakib.printPlayerName();
 tamim.printPlayerName(); 
 
-*/
 
-/* 
+
+
 var personFun =function(name, age){
     return{
         name:name,
@@ -74,13 +74,13 @@ var personFun =function(name, age){
 var sakib= personFun('sakib',35);
 sakib.printName();
 sakib.father.printName();
- */
+
 
 
 //todo: Explicite Binding
 
 
-/* var printName= function (){
+var printName= function (){
     console.log(this.name)
 };
 
@@ -93,11 +93,11 @@ var sakib= {
     // }
 };
 
-printName.call(sakib) */
+printName.call(sakib)
 
 
 //todo: new Binding
-/* 
+
 function player(name,age){
     //let this =Object.create(null)
     this.name =name;
@@ -107,7 +107,7 @@ function player(name,age){
     //return this;
 };
 
-var obj= new player("Sakib",34); */
+var obj= new player("Sakib",34);
 
 
 //todo: window Binding
