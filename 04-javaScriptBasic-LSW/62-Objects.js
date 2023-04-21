@@ -86,8 +86,92 @@ for(let i in myObj?.cars){
     // console.log(i);
     // console.log(myObj.cars[i]);
     // console.log(myObj.cars[i]?.models);
-    console.log(myObj.cars[i]?.models[2]);
+    // console.log(myObj.cars[i]?.models[2]);
    
 }
 
+// todo: adding method to obj
+/* 
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+person.age =55;
+person.newMethod=function(){
+    return this.id;
+}
 
+console.log(person);
+console.log(person.newMethod());
+console.dir(typeof person.fullName); */
+
+/* const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+// console.log(person);
+console.log(Object.values(person)) */
+
+// document.getElementById('demo').innerHTML=person.name + " is " +person.age
+
+
+//todo: 66-Object Accessors
+
+/* // Create an object:
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "engllish",
+    city:"",
+    get lang() {
+      return this.language;
+    },
+    get fullname(){
+        return this.firstName+ " " + this.lastName;
+    },
+    set country(country){
+        this.city=country
+    }
+};
+
+person.country="Nepal"
+
+// console.log(person.lang);
+// console.log(person.fullname);
+console.log(person); */
+
+
+
+//todo: object constructor
+
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.fullName=function(){
+        return this.firstName+ " " + this.lastName;
+    }
+}
+
+
+console.log(Person);
+
+const bappa =new Person('bappa','saha',26,'black');
+const kaka =new Person('kaka','saha',23,'red');
+
+bappa.country ="Bangladesh";
+
+
+console.log(bappa);
+console.log('-------------------------------');
+console.log(kaka);
+
+
+console.log(bappa.fullName())
