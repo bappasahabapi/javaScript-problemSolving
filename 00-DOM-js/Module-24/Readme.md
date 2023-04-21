@@ -1,4 +1,6 @@
-
+ 
+`code output:`
+![Github Banner](output.png) 
 **index.html**
 ```html
 <!DOCTYPE html>
