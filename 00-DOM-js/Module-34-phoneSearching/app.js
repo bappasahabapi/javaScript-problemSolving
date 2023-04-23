@@ -1,4 +1,4 @@
-const loadPhones = async (searchText,dataLimit) => {
+const loadPhones = async (searchText, dataLimit) => {
   //   const url = `./phoneDb.json`;
   const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
 
@@ -8,7 +8,7 @@ const loadPhones = async (searchText,dataLimit) => {
   displayPhones(data.data, dataLimit);
 };
 
-const displayPhones = (phones,dataLimit) => {
+const displayPhones = (phones, dataLimit) => {
   // console.log(phones);
   const phoneContainer = document.getElementById("phone-container");
 
@@ -39,16 +39,18 @@ const displayPhones = (phones,dataLimit) => {
     // const {image,phone_name}=phone;
     phoneDiv.innerHTML = `
         
-        <div class="card">
+    <div class="card">
         <img src="${phone.image}" class="card-img-top" alt="...">
-        <h3>${phone.brand}</h3>
+        <h3 class="text-center">${phone.brand}</h3>
         <div class="card-body">
           <h5 class="card-title">${phone.phone_name}</h5>
           <h6 class="card-title">${phone.slug}</h6>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
+          <p class="card-text">This is a wider card with supporting text below as a  natural   lead-in to additional content. This content is a little bit   longer.
+          </p>
+          <button onClick="loadPhoneDetails('${phone.slug}')" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#phoneDetailsModal">Show Details</button>
+          
         </div>
-      </div>
+    </div>
         `;
 
     phoneContainer.appendChild(phoneDiv);
@@ -58,26 +60,30 @@ const displayPhones = (phones,dataLimit) => {
   toggleSpinner(false);
 };
 
-const processSearch=(dataLimit)=>{
+const processSearch = (dataLimit) => {
+  toggleSpinner(true);
+  const searchField = document.getElementById("search-field");
+  const getSearchFieldText = searchField.value;
+  loadPhones(getSearchFieldText, dataLimit);
+};
 
-    toggleSpinner(true);
-    const searchField = document.getElementById("search-field");
-    const getSearchFieldText = searchField.value;
-    loadPhones(getSearchFieldText,dataLimit); 
-}
-
-
-
-
-
-//todo: button search function implementing
+//todo: handle button search click
 document.getElementById("btn-search").addEventListener("click", () => {
-    processSearch(10)
+  processSearch(10);
   /* //todo: start loader
   toggleSpinner(true);
   const searchField = document.getElementById("search-field");
   const getSearchFieldText = searchField.value;
   loadPhones(getSearchFieldText); */
+});
+
+//todo: handle enter key handle on search field
+
+document.getElementById("search-field").addEventListener("keypress", (e) => {
+  // console.log(e.key)
+  if (e.key === "Enter") {
+    processSearch(10);
+  }
 });
 
 //todo: spinner function implementation
@@ -93,14 +99,41 @@ const toggleSpinner = (isLoading) => {
 //todo: have to work on it for best
 
 document.getElementById("btn-show-all").addEventListener("click", () => {
+  processSearch();
 
-    processSearch();
-
- /*  //todo: start loader
+  /*  //todo: start loader
   toggleSpinner(true);
   const searchField = document.getElementById("search-field");
   const getSearchFieldText = searchField.value;
   loadPhones(getSearchFieldText); */
 });
 
-// loadPhones();
+//todo: loadPhoneDetails
+
+const loadPhoneDetails = async (id) => {
+  const url = `https://openapi.programming-hero.com/api/phone/${id}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  // console.log(data.data)
+  displayPhoneDetails(data.data);
+};
+
+// todo: display details in modals
+
+const displayPhoneDetails = (phone) => {
+  console.log(phone);
+
+  const modalTitle = document.getElementById("phoneDetailsModalLabel");
+  modalTitle.innerText = phone.name;
+
+  const phoneDetails = document.getElementById("phone-details");
+  phoneDetails.innerHTML = `
+    
+    <p>Release Date: ${
+      phone.releaseDate ? phone.releaseDate : "No Release Date found"
+    }</p>
+   <p>Others: ${phone.others ? phone.others.Bluetooth : "No Bluetooth found"}</p>
+    `;
+};
+
+loadPhones("apple");

@@ -11,14 +11,15 @@
 
 <body>
   <header>
-    <h1>Welcome to phone bd of Thakurgaon</h1>
+    <h1 class="text-center mt-4">Welcome to phone bd of Thakurgaon</h1>
   </header>
-  <main class="container">
+  <main class="container mt-5">
     <!-- search field  -->
     <section>
-      <div class="mb-3 w-75 d-flex">
+      <div class="mb-3 w-100 d-flex">
         <label for="exampleFormControlInput1" class="form-label">Search Phones</label>
-        <input id="search-field" type="email" class="form-control" id="exampleFormControlInput1" placeholder="search your phones">
+        <input id="search-field" type="email" class="form-control" id="exampleFormControlInput1"
+          placeholder="search your phones">
         <div id="btn-search" class="btn btn-primary ms-4 ">Search</div>
       </div>
     </section>
@@ -37,11 +38,36 @@
         <button id="btn-show-all" class="btn btn-primary">Show all</button>
       </div>
     </section>
-                      <!-- Spinner section  -->
+    <!-- Spinner section  -->
     <section id="loader" class="d-none">
       <div class="d-flex justify-content-center align-items-center mt-5">
         <div class="spinner-border text-success" role="status">
           <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------- phone details sections -->
+    <section>
+      <!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#phoneDetailsModal">
+        Launch demo modal
+      </button> -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="phoneDetailsModal" tabindex="-1" aria-labelledby="phoneDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="phoneDetailsModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="phone-details" class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -55,3 +81,7 @@
 </body>
 
 </html>
+
+
+
+
