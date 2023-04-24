@@ -1,5 +1,7 @@
 live link: https://bd-phone.netlify.app/
 
+search phones: oppo,apple
+
 `code output:`
 ![Github Banner](phone1.png) 
 
