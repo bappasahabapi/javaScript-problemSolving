@@ -1,6 +1,6 @@
 //todo: 62- Objects
 
-/* 
+
 const person1 = {};
 person1.firstName = "John";
 person1.lastName = "Doe";
@@ -8,22 +8,22 @@ person1.age = 50;
 person1.eyeColor = "blue";
 
 console.log(person1);
- */
 
 
-/*  const person = new Object();
+
+ const person = new Object();
 person.firstName = "bappa";
 person.lastName = "saha";
 person.age = 51;
 person.eyeColor = "blue";
 
 console.log(person); 
- */
+
 
 
 //todo: 63-Object Properties
 
-/* const human ={
+const human ={
     name:"bappa",
     age:26
 };
@@ -35,10 +35,10 @@ let c ='country'
 // console.log(human)
 console.log(human.age);
 console.log(human['age']);
-console.log(human[c]); */
+console.log(human[c]);
 
 
-/*
+
  const person2 = {
     fname:" John",
     lname:" Doe",
@@ -54,7 +54,7 @@ console.log(human[c]); */
 
   console.log(text); 
   
-  */
+ 
 
 // todo: nested {[]}
 
@@ -75,23 +75,23 @@ const myObj = {
     ]
 }
 
-// console.log(myObj);
-// console.log(myObj?.cars[2]?.models[1]);
+console.log(myObj);
+console.log(myObj?.cars[2]?.models[1]);
 
-// for(let i in myObj){
-//     console.log(i);
-// }
+for(let i in myObj){
+    console.log(i);
+}
 
 for(let i in myObj?.cars){
-    // console.log(i);
-    // console.log(myObj.cars[i]);
-    // console.log(myObj.cars[i]?.models);
-    // console.log(myObj.cars[i]?.models[2]);
+    console.log(i);
+    console.log(myObj.cars[i]);
+    console.log(myObj.cars[i]?.models);
+    console.log(myObj.cars[i]?.models[2]);
    
 }
 
 // todo: adding method to obj
-/* 
+
 const person = {
     firstName: "John",
     lastName: "Doe",
@@ -107,23 +107,23 @@ person.newMethod=function(){
 
 console.log(person);
 console.log(person.newMethod());
-console.dir(typeof person.fullName); */
+console.dir(typeof person.fullName);
 
-/* const person = {
+const person = {
     name: "John",
     age: 30,
     city: "New York"
 };
 
 // console.log(person);
-console.log(Object.values(person)) */
+console.log(Object.values(person))
 
-// document.getElementById('demo').innerHTML=person.name + " is " +person.age
+document.getElementById('demo').innerHTML=person.name + " is " +person.age
 
 
 //todo: 66-Object Accessors
 
-/* // Create an object:
+// Create an object:
 const person = {
     firstName: "John",
     lastName: "Doe",
@@ -144,7 +144,7 @@ person.country="Nepal"
 
 // console.log(person.lang);
 // console.log(person.fullname);
-console.log(person); */
+console.log(person);
 
 
 
