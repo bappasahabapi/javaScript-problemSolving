@@ -1,7 +1,9 @@
 # JavaScript problems & coding solution:
-`🔥Interview-Questions-code:` https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/javaScriptBasic-LSW
+[🔥Interview-Questions-code:](https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/04-javaScriptBasic-LSW)
 
-### VISIT: https://github.com/bappasahabapi/js-milestone123456
+ [📂 js-milestone123456](https://github.com/bappasahabapi/js-milestone123456)
+
+[📂 HandNotes-PDF](https://github.com/bappasahabapi/HandNotePdf/blob/main/all%20milestone%20%20file%20pro%20(1).pdf)
 
 
 > There is a dreamy boy whose name is bappa shaa.
