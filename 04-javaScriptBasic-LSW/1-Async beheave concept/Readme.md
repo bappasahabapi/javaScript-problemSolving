@@ -1,6 +1,8 @@
-//todo: call back function
+**todo: call back function**
+
 // if we send a functin parameter inside a function.
 
+```js
 function greeting(input,name){
     console.log(input);
     greetingHandler(name);
@@ -24,20 +26,23 @@ function goodNight(name){
     return console.log('good night',name)
 }
 
-// greeting(obj)
-// greeting(greetingHandler,'bappa')
-// greeting(greetingHandler())
+greeting(obj)
+greeting(greetingHandler,'bappa')
+greeting(greetingHandler())
 
-// greeting(greetingHandler,'Bappa');
-// greeting(goodEvenning,'Bappa');
-// greeting(goodNight,'Bappa');
+greeting(greetingHandler,'Bappa');
+greeting(goodEvenning,'Bappa');
+greeting(goodNight,'Bappa');
+
+```
 
 
 
-//todo: call back function 
+**todo: 81-call back function**
 
-// example -1
+example -1
 
+```js
 function myFirst() {
     console.log('first is calling')
   }
@@ -49,11 +54,12 @@ function myFirst() {
 //   mySecond();
 //   myFirst();
 // ------------------- 
+```
 
 
+   example -2
 
-//   example -2
- /*
+ ```js
    function DisplayFunc(finalResult) {
    console.log(finalResult)
   }
@@ -78,12 +84,13 @@ sum(4,4);
 
 // let result=myCalculator(mul,sum);
 DisplayFunc(result); // 18
- */
+```
 
 
-// example-3 
+example-3 
 
-/* function DisplayFunc(finalResult) {
+```js
+ function DisplayFunc(finalResult) {
     console.log(finalResult)
    }
  
@@ -106,10 +113,10 @@ DisplayFunc(result); // 18
    myCalculator(mul(2,5),sum(4,4));
 //    myCalculator(5,5); 
 
-*/
+```
+ example-4  : here we use the callback
 
-// example-4  : here we use the callback
-
+```js
 function myDisplayer(some) {
     console.log(some)
   }
@@ -122,13 +129,14 @@ function myDisplayer(some) {
     
   }
   
-  // myCalculator(5, 5, myDisplayer);
+  myCalculator(5, 5, myDisplayer);
 
+```
+**todo: 82-Asynchoronous Behavior**
 
-//todo: 82-Asynchoronous Behavior
+`example -1`
+```js
 
-/* 
-// example -1
 function hello(){
   console.log('Line 1 code');
 }
@@ -136,11 +144,13 @@ function hello(){
 console.log('Line 2 code');
 console.log('Line 3 code');
 hello();
+```
+ 
 
- */
 
+`exmaple-2`
 
-//exmaple-2
+```js
 console.log('line 1 code ');
 setTimeout(function(){
   console.log('Line 2 code ');
@@ -151,3 +161,5 @@ setInterval(function(){
 },2000)
 
 console.log('last line code');
+
+```
