@@ -163,3 +163,109 @@ setInterval(function(){
 console.log('last line code');
 
 ```
+
+
+**async callback example**
+todo: example-2
+
+```js
+const isloggin = true;
+const paymentSuccess = true;
+const enrollClicked = true;
+const score = 80;
+const courseFinished = true;
+
+//1st
+function login(callback) {
+    console.log('Step-1 Welcome to login page')
+    setTimeout(() => {
+        if (isloggin) {
+            console.log('   Successfully logged in.');
+            callback();
+        } else {
+            console.log('Login failed');
+        }
+    }, 3000);
+}
+
+// 2nd 
+function payment(callback) {
+    console.log('Step-2 Make the payment first');
+    setTimeout(function () {
+        if (paymentSuccess) {
+            console.log('   Payment is completed');
+            callback();
+
+        } else {
+            console.log('payment is not completed yet');
+        }
+    },3000)
+
+
+}
+
+// 3rd 
+function enrol(callback) {
+    console.log('setp-3 Course enrollment is in progress');
+
+    setTimeout(function () {
+        if (paymentSuccess) {
+            console.log('   enrollment completed')
+            callback();
+        } else {
+            console.log('Click the enrollment button')
+        }
+    }, 3000)
+
+}
+
+// 4th 
+function courseProgress(callback) {
+    console.log('setp-4 Course on progress');
+
+    setTimeout(function () {
+        if (score >= 80) {
+            callback();
+        } else {
+            console.log('you could not get the marks for certificate');
+        }
+    }, 4000)
+}
+
+// 5th 
+function getCertificate(callback) {
+    console.log('setp-5 preparing your certificate');
+    setTimeout(() => {
+        if (courseFinished) {
+            callback()
+        }
+        else {
+            console.log('please finishd the procedure first');
+        }
+
+    }, 2000);
+}
+
+//6th
+function finised() {
+    console.log('setp-6 Congrats!!! you got the certificated');
+    setTimeout(() => {
+        console.log('   Thanks for the course')
+    }, 2000);
+}
+
+// call the function
+
+login(function () {
+    payment(function () {
+        enrol(function () {
+            courseProgress(function () {
+                getCertificate(finised);
+            })
+        })
+    })
+})
+
+
+
+```

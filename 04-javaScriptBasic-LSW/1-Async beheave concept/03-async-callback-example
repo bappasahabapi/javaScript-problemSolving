@@ -74,6 +74,7 @@ const enrollClicked = true;
 const score = 80;
 const courseFinished = true;
 
+//1st
 function login(callback) {
     console.log('Step-1 Welcome to login page')
     setTimeout(() => {
@@ -86,6 +87,7 @@ function login(callback) {
     }, 3000);
 }
 
+// 2nd 
 function payment(callback) {
     console.log('Step-2 Make the payment first');
     setTimeout(function () {
@@ -101,6 +103,7 @@ function payment(callback) {
 
 }
 
+// 3rd 
 function enrol(callback) {
     console.log('setp-3 Course enrollment is in progress');
 
@@ -115,7 +118,7 @@ function enrol(callback) {
 
 }
 
-
+// 4th 
 function courseProgress(callback) {
     console.log('setp-4 Course on progress');
 
@@ -128,7 +131,7 @@ function courseProgress(callback) {
     }, 4000)
 }
 
-
+// 5th 
 function getCertificate(callback) {
     console.log('setp-5 preparing your certificate');
     setTimeout(() => {
@@ -142,7 +145,7 @@ function getCertificate(callback) {
     }, 2000);
 }
 
-//fourth
+//6th
 function finised() {
     console.log('setp-6 Congrats!!! you got the certificated');
     setTimeout(() => {
@@ -150,7 +153,7 @@ function finised() {
     }, 2000);
 }
 
-
+// calling
 login(function () {
     payment(function () {
         enrol(function () {
