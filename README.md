@@ -16,7 +16,7 @@
 
 > Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@BappaSaha](https://bappa-saha.web.app) for technical updates.
 
-#### 📂 Folder Structure:
+### 📂 Folder Structure:
 
   📂 [00-DOM-js](https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/00-DOM-js) 
 
