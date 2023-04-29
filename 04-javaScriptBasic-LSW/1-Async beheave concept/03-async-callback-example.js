@@ -1,8 +1,8 @@
-/* //todo: 83-callback pattern
+//todo: 83-callback pattern
 
 //todo: example-1
 
-const paymentSuccess =true;
+/* const paymentSuccess1 =true;
 const marks =80;
 const finish =true;
 //first
@@ -10,7 +10,7 @@ function enrol(callback){
     console.log('setp-1 Course enrollment is in progress');
 
     setTimeout(function(){
-        if(paymentSuccess){
+        if(paymentSuccess1){
             callback();
         }else{
             console.log('Payment failed')
@@ -47,7 +47,7 @@ function getCertificate(callback){
 }
 
 //fourth
-function finised(){
+function finised1(){
     console.log('setp-4 Congrats!!! you got the certificated');
     setTimeout(() => {
         console.log('Thanks for the course')
@@ -60,11 +60,11 @@ function finised(){
 enrol(function(){
     // progress(getCertificate);
     progress(function(){
-        getCertificate(finised);
+        getCertificate(finised1);
     })
-})
+}) */
 
- */
+
 
 
 //todo: example-2
@@ -146,7 +146,7 @@ function getCertificate(callback) {
 }
 
 //6th
-function finised() {
+function finished() {
     console.log('setp-6 Congrats!!! you got the certificated');
     setTimeout(() => {
         console.log('   Thanks for the course')
@@ -158,9 +158,11 @@ login(function () {
     payment(function () {
         enrol(function () {
             courseProgress(function () {
-                getCertificate(finised);
+                getCertificate(finished);
             })
         })
     })
 })
 
+
+// this calling is called callback hell

@@ -1,12 +1,12 @@
 # JavaScript problems & coding solution:
+
 [🔥Interview-Questions-code:](https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/04-javaScriptBasic-LSW)
 
- [📂 js-milestone123456](https://github.com/bappasahabapi/js-milestone123456)
+[📂 js-milestone123456](https://github.com/bappasahabapi/js-milestone123456)
 
-[📂 HandNotes-PDF](https://github.com/bappasahabapi/HandNotePdf/blob/main/all%20milestone%20%20file%20pro%20(1).pdf)
+[📂 HandNotes-PDF](<https://github.com/bappasahabapi/HandNotePdf/blob/main/all%20milestone%20%20file%20pro%20(1).pdf>)
 
-
-> There is a dreamy boy whose name is bappa shaa.
+--
 
 <p align="center">
   <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
@@ -16,12 +16,17 @@
 
 > Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@BappaSaha](https://bappa-saha.web.app) for technical updates.
 
-### 📂 Folder Structure:
+#### 📂 Folder Structure:
 
-        📂 Advanced-level-js
-        📂 js-map-find-filter-destructing
-        📂 Calculted codes
-        📂 javaScriptBasic-LWS
+  📂 [00-DOM-js](https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/00-DOM-js) 
+
+  [📂 01-Advanced-level-js](https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/01-Advanced-level-js)
+
+  [📂 02-Calculations codes](https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/02-Calculations-codes)
+
+  [📂 03-js-map-find-filter-destructing](https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/03-js-map-find-filter-desturctring)
+
+  [📂 04-javaScriptBasic-LWS](https://github.com/bappasahabapi/javaScript-problemSolving/tree/main/04-javaScriptBasic-LSW)
 
 # Questions:
 
