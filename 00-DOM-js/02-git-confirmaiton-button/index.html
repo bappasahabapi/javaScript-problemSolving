@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Confirmation Button</title>
+</head>
+<body>
+    <main>
+        <h1 id="github-info">Github Info</h1>
+        <input type="text" name="" id="text-field" placeholder="type 'delete'">
+        <button id="btn" disabled>Delete</button>
+    </main>
+
+    <script>
+            document.getElementById('text-field')
+            .addEventListener('keyup', function(e){
+                const text =e.target.value;
+                const deleteButton =document.getElementById('btn');
+
+                if(text == 'delete'){
+                    deleteButton.removeAttribute('disabled');
+                }
+                else{
+                    deleteButton.setAttribute('disabled')
+                }
+            });
+
+            document.getElementById('btn')
+            .addEventListener('click', function(){
+                const githubInfo =document.getElementById('github-info')
+                githubInfo.style.display='none';
+            })
+
+    </script>
+    <script>
+                // document.getElementById('text-field')
+        // .addEventListener('keyup', function(event){
+        //     console.log(event.target.value);
+        // });
+        // .addEventListener('focus', function(){
+        //     console.log('Focused');
+        // })
+        // .addEventListener('blur', function(){
+        //     console.log('Bluring');
+        // })
+    </script>
+</body>
+</html>
